@@ -28,6 +28,14 @@ where $e_\textrm{o}$ and $e_\textrm{m}$ denote the elevation of the observation 
 ## Data and usage
 
 The script is build around the ESSD benchmark dataset.
-This dataset can be downloaded using [the download script](https://github.com/EUPP-benchmark/ESSD-benchmark-datasets). This will fetch the dataset into NetCDF files on your disk.
+This dataset can be downloaded using [the download script](https://github.com/EUPP-benchmark/ESSD-benchmark-datasets). This will fetch the dataset into NetCDF files on your disk. To postprocess the test forecasts, one must then run:
+
+    python ASRE_with_local_bias_correction.py
+
+In addition, this Python script requires:
+
+1. [Numpy](https://numpy.org/)
+2. [Xarray](https://xarray.pydata.org/)
+3. [Pandas](https://pandas.pydata.org/)
 
 
